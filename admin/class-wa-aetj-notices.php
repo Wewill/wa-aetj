@@ -4,51 +4,6 @@ function general_admin_notice(){
     global $post, $pagenow, $typenow;
 
 	$general_notices = array(
-		//competitions
-		[	'allowed_pagenow' => array('edit.php'), 
-			'allowed_posttype' => array('competitions'),
-			'allowed_taxonomy' => array(),
-			'allowed_page' => array(),
-			'allowed_roles' => array('administrator', 'editor', 'contributor'), 
-			'title' => 'Compétition.s', 'content' => 'Dans cet onglet se trouve la <b>liste des compétitions également recensées sur <em>FFGolf</em></b>. Les fiches permettent de définir un état, une date, des données importées de départs et de résultats. Les fiches peuvent être classifiées via une ou plusieurs catégories. Les données sont à exporter de FFGolf en *.csv.', 'class' => 'default',
-			'icon' => 'dashicons dashicons-awards',
-		],
-		//course 
-		[	'allowed_pagenow' => array('edit.php'), 
-			'allowed_posttype' => array('course'),
-			'allowed_taxonomy' => array(),
-			'allowed_page' => array(),
-			'allowed_roles' => array('administrator', 'editor', 'contributor'), 
-			'title' => 'Trous', 'content' => 'Dans cet onglet se trouve la <b>liste des trous du parcours <em>du Golf de Salouël</em></b>. Il est possible de renseigner pur chaque trou, le nombre de coups, le handicap, la distance...', 'class' => 'default',
-			'icon' => 'dashicons dashicons-location-alt',
-		],
-		//testimony 
-		[	'allowed_pagenow' => array('edit.php'), 
-			'allowed_posttype' => array('testimony'),
-			'allowed_taxonomy' => array(),
-			'allowed_page' => array(),
-			'allowed_roles' => array('administrator', 'editor', 'contributor'), 
-			'title' => 'Témoignage.s', 'content' => 'Dans cet onglet se trouve la <b>liste des témoignage aléatoire du site</b>.', 'class' => 'default',
-			'icon' => 'dashicons dashicons-editor-quote',
-		],
-		//competition > competition-category 
-		[	'allowed_pagenow' => array('edit-tags.php'), 
-			'allowed_posttype' => array(''),
-			'allowed_taxonomy' => array('competition-category'),
-			'allowed_page' => array(),
-			'allowed_roles' => array('administrator', 'editor', 'contributor'), 
-			'title' => '', 'content' => 'Dans cet onglet se trouvent le.s département.s et région.s afin de localiser les enregistrements.', 'class' => 'default',
-			'icon' => 'dashicons dashicons-admin-site',
-		],
-		// Index
-		// [	'allowed_pagenow' => array('index.php'),
-		// 	'allowed_posttype' => array(),
-		// 	'allowed_taxonomy' => array(),
-		// 	'allowed_page' => array(),
-		// 	'allowed_roles' => array('administrator', 'editor', 'contributor'), 
-		// 	'title' => __('Bienvenue sur le <em>site du Golf de Salouël</em>', 'war'), 'content' => __('<strong>Nouveau ?</strong> Pour publier du contenu sur le <em>site</em>, merci de consulter préalablement le  <a href="/wp-content/plugins/wa-aetj/dist/pdf/AETJ_Tutoriel_etre_administrateur.pdf">Tutoriel AETJ - Être adminitrateur du site</a>.', 'war'), 'class' => 'default', 'wrapper' => 'h1',
-		// 	'icon' => 'dashicons dashicons-pressthis',
-		// ],
 		// Post
 		[	'allowed_pagenow' => array('edit.php'),
 			'allowed_posttype' => array('post'),
@@ -58,7 +13,6 @@ function general_admin_notice(){
 			'title' => 'Articles', 'content' => __('Dans cet onglet se trouve la liste des actualités / articles du site. Il est important de <strong>catégoriser les articles</strong> et de leur <strong>ajouter des images en avant</strong>.', 'war'), 'class' => 'default', 'wrapper' => 'h1',
 			'icon' => 'dashicons dashicons-admin-post',
 		],
-		
 		// Page
 		// [	'allowed_pagenow' => array('edit.php'),
 		// 	'allowed_posttype' => array('page'),
