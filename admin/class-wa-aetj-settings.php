@@ -2,15 +2,17 @@
 /*
 Define admin settings
 */
-
-add_filter( 'mb_settings_pages', 'wa_aetj_settings', 50);
+add_filter( 'mb_settings_pages', 'wa_aetj_settings');
 function wa_aetj_settings( $settings_pages ) {
+
+    wp_die('test');
+
 	$settings_pages[] = [
         'menu_title'      => __( 'Custom settings', 'wa_aetj' ),
         'id'              => 'custom-settings',
-        'position'        => 50,
         'parent'          => 'options-general.php',
         'class'           => 'wa-aetj',
+		'style'      => 'no-boxes',
         // 'tabs'            => [
         //     'edition'  => 'Edition',
         //     'archives' => 'Archives',
@@ -23,6 +25,7 @@ function wa_aetj_settings( $settings_pages ) {
         //         'content' => 'Lorem ipsum...',
         //     ],
         // ],
+        'columns'         => 1,
         'customizer'      => false,
         'customizer_only' => false,
         'network'         => false,
