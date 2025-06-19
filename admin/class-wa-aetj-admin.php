@@ -187,8 +187,8 @@ class Wa_AetJ_Admin {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wa-aetj-notices.php';
 		// // Add shortcodes
 		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wa-aetj-shortcodes.php';
-		// // Manage settings
-		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wa-aetj-settings.php';
+		// Manage settings
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wa-aetj-settings.php';
 		// // Add export capabilities
 		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wa-aetj-export.php';
 	}
