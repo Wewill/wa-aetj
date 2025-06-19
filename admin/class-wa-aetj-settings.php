@@ -4,9 +4,6 @@ Define admin settings
 */
 add_filter( 'mb_settings_pages', 'wa_aetj_settings');
 function wa_aetj_settings( $settings_pages ) {
-
-    wp_die('test');
-
 	$settings_pages[] = [
         'menu_title'      => __( 'Custom settings', 'wa_aetj' ),
         'id'              => 'custom-settings',
